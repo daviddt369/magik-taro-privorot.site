@@ -25,8 +25,13 @@
 
 ## Куда класть сертификаты
 
-- Сейчас используются временные заглушки в [assets/certificates](/mnt/e/codex/www/raisa/assets/certificates)
+- Сейчас используются временные горизонтальные заглушки в [media/certificates](/mnt/e/codex/www/raisa/media/certificates)
 - Для замены положите реальные файлы в эту папку и обновите пути в [index.html](/mnt/e/codex/www/raisa/index.html)
+
+## Где менять иконки услуг
+
+- Иконки услуг лежат в [media/icons](/mnt/e/codex/www/raisa/media/icons)
+- Для сайта выбран единый комплект `icon gold2`; внутри одного сайта не смешивать стили иконок
 
 ## Где вставлять аналитику
 
@@ -49,8 +54,9 @@
 ## Как устроен popup «Карта дня»
 
 - Разметка модального окна находится в [index.html](/mnt/e/codex/www/raisa/index.html)
-- Логика показа, закрытия, sessionStorage и копирования текста находится в [script.js](/mnt/e/codex/www/raisa/script.js)
+- Логика показа, закрытия, sessionStorage и выбора карты находится в [script.js](/mnt/e/codex/www/raisa/script.js)
 - Изображения карт лежат в [assets/cards](/mnt/e/codex/www/raisa/assets/cards)
+- В popup оставлена только кнопка WhatsApp: `Разобрать карту в WhatsApp`
 
 ## Как локально открыть сайт
 

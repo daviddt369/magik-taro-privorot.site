@@ -18,12 +18,17 @@
   <meta name="theme-color" content="#07080f">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oranienbaum&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <div class="page-shell">
+    <div class="ambient-layer" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="На первый экран сайта Раисы">
         <span class="brand-mark"></span>
@@ -47,10 +52,11 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <p class="eyebrow">Онлайн-консультация, диагностика, защита</p>
-            <h1>Когда ситуация стала тяжёлой, важно увидеть корень проблемы, а не только её последствия.</h1>
+            <h1>Раиса</h1>
+            <p class="hero-titleline">Диагностика сложных ситуаций и защита через Таро</p>
             <p class="hero-lead">
-              Я работаю с запросами о сложных отношениях, семейных конфликтах, защите, тревожных повторяющихся
-              сценариях и вопросах, где нужен спокойный, точный разбор без лишнего шума.
+              Помогаю увидеть причину конфликта, скрытое напряжение и ближайшие варианты действий, когда ситуация
+              стала тяжёлой и требует собранного разбора.
             </p>
             <ul class="hero-facts">
               <li>Конфиденциально и бережно к вашему запросу</li>
@@ -58,8 +64,8 @@
               <li>Помощь понять причины конфликта и возможные шаги</li>
             </ul>
             <div class="cta-row">
-              <a class="button button-primary" href="https://wa.me/RAISA_WHATSAPP" aria-label="Связаться с Раисой в WhatsApp">WhatsApp</a>
-              <a class="button button-secondary" href="https://t.me/RAISA_TELEGRAM" aria-label="Открыть Telegram Раисы">Telegram</a>
+              <a class="button button-primary" href="https://wa.me/RAISA_WHATSAPP" aria-label="Связаться с Раисой в WhatsApp">Написать в WhatsApp</a>
+              <a class="button button-secondary" href="#services" aria-label="Перейти к услугам Раисы">Получить консультацию</a>
               <a class="button button-ghost" href="tel:RAISA_PHONE" aria-label="Позвонить Раисе">Позвонить</a>
             </div>
           </div>
@@ -146,52 +152,52 @@
           </div>
           <div class="service-stack">
             <article class="service-panel">
-              <div class="service-mark" aria-hidden="true">◈</div>
+              <img class="service-icon" src="./media/icons/service-1.png" alt="" loading="lazy" width="86" height="86">
               <div>
                 <h3>Диагностика ситуации</h3>
                 <p>Подходит, когда важно понять, что происходит на самом деле и где скрыта ключевая причина.</p>
               </div>
-              <a href="#contact">Обсудить запрос</a>
+              <a href="https://wa.me/RAISA_WHATSAPP">Получить консультацию</a>
             </article>
             <article class="service-panel">
-              <div class="service-mark" aria-hidden="true">✦</div>
+              <img class="service-icon" src="./media/icons/service-2.png" alt="" loading="lazy" width="86" height="86">
               <div>
                 <h3>Расклад на отношения</h3>
                 <p>Помогаю увидеть чувства, дистанцию, влияние третьих лиц и возможное развитие истории.</p>
               </div>
-              <a href="#contact">Узнать подробнее</a>
+              <a href="https://wa.me/RAISA_WHATSAPP">Получить консультацию</a>
             </article>
             <article class="service-panel">
-              <div class="service-mark" aria-hidden="true">✧</div>
+              <img class="service-icon" src="./media/icons/service-3.png" alt="" loading="lazy" width="86" height="86">
               <div>
                 <h3>Возврат и воссоединение</h3>
                 <p>Разбираем, есть ли перспектива, какие факторы мешают и как лучше действовать дальше.</p>
               </div>
-              <a href="#contact">Написать Раисе</a>
+              <a href="https://wa.me/RAISA_WHATSAPP">Получить консультацию</a>
             </article>
             <article class="service-panel">
-              <div class="service-mark" aria-hidden="true">⬡</div>
+              <img class="service-icon" src="./media/icons/service-4.png" alt="" loading="lazy" width="86" height="86">
               <div>
                 <h3>Защита и снятие негатива</h3>
                 <p>Когда важны устойчивость, личные границы и понимание, нужна ли дополнительная работа по защите.</p>
               </div>
-              <a href="#contact">Получить консультацию</a>
+              <a href="https://wa.me/RAISA_WHATSAPP">Получить консультацию</a>
             </article>
             <article class="service-panel">
-              <div class="service-mark" aria-hidden="true">✺</div>
+              <img class="service-icon" src="./media/icons/service-5.png" alt="" loading="lazy" width="86" height="86">
               <div>
                 <h3>Просмотр будущего</h3>
                 <p>Помогает увидеть ближайшие варианты развития и не принимать решения только на эмоциях.</p>
               </div>
-              <a href="#contact">Задать вопрос</a>
+              <a href="https://wa.me/RAISA_WHATSAPP">Получить консультацию</a>
             </article>
             <article class="service-panel">
-              <div class="service-mark" aria-hidden="true">◉</div>
+              <img class="service-icon" src="./media/icons/service-6.png" alt="" loading="lazy" width="86" height="86">
               <div>
                 <h3>Личная онлайн-консультация</h3>
                 <p>Подходит для сложных периодов, когда нужен цельный разбор, поддержка и ощущение опоры.</p>
               </div>
-              <a href="#contact">Связаться сейчас</a>
+              <a href="https://wa.me/RAISA_WHATSAPP">Получить консультацию</a>
             </article>
           </div>
           <div class="cta-center">
@@ -291,13 +297,13 @@
             <h2>Два временных места под документы и подтверждения</h2>
           </div>
           <div class="certificate-grid">
-            <button class="certificate-card" type="button" data-lightbox-image="./assets/certificates/certificate-horizontal.jpg" aria-label="Открыть сертификат Раисы крупнее">
-              <!-- Временная заглушка. Реальный горизонтальный сертификат можно заменить здесь: ./assets/certificates/certificate-horizontal.jpg -->
-              <img src="./assets/certificates/certificate-horizontal.jpg" alt="Временный горизонтальный сертификат Раисы" loading="lazy" width="1086" height="757">
+            <button class="certificate-card" type="button" data-lightbox-image="./media/certificates/certificate-1.jpg" aria-label="Открыть сертификат Раисы крупнее">
+              <!-- Временная заглушка. Реальный горизонтальный сертификат можно заменить здесь: ./media/certificates/certificate-1.jpg -->
+              <img src="./media/certificates/certificate-1.jpg" alt="Временный горизонтальный сертификат Раисы" loading="lazy" width="1086" height="757">
             </button>
-            <button class="certificate-card certificate-card-vertical" type="button" data-lightbox-image="./assets/certificates/certificate-vertical.jpg" aria-label="Открыть второй сертификат Раисы крупнее">
-              <!-- Временная заглушка. Реальный вертикальный сертификат можно заменить здесь: ./assets/certificates/certificate-vertical.jpg -->
-              <img src="./assets/certificates/certificate-vertical.jpg" alt="Временный вертикальный сертификат Раисы" loading="lazy" width="900" height="1200">
+            <button class="certificate-card" type="button" data-lightbox-image="./media/certificates/certificate-2.jpg" aria-label="Открыть второй сертификат Раисы крупнее">
+              <!-- Временная заглушка. Реальный горизонтальный сертификат можно заменить здесь: ./media/certificates/certificate-2.jpg -->
+              <img src="./media/certificates/certificate-2.jpg" alt="Временный горизонтальный сертификат Раисы" loading="lazy" width="1005" height="640">
             </button>
           </div>
         </div>
@@ -319,7 +325,7 @@
             <article class="review-card"><p>Обращалась за диагностикой и защитой. Самое ценное — ощущение, что мою ситуацию действительно увидели целиком.</p><span>Защита и опора</span></article>
           </div>
           <div class="cta-center">
-            <a class="button button-primary" href="https://wa.me/RAISA_WHATSAPP">Задать свой вопрос</a>
+            <a class="button button-primary" href="https://wa.me/RAISA_WHATSAPP">Написать в WhatsApp</a>
             <a class="button button-secondary" href="tel:RAISA_PHONE">Позвонить Раисе</a>
           </div>
         </div>
@@ -350,7 +356,7 @@
             <p>Кратко опишите запрос, и я подскажу, с чего лучше начать: диагностика, расклад на отношения, работа по фото или личная онлайн-консультация.</p>
           </div>
           <div class="contact-panel">
-            <a class="button button-primary" href="https://wa.me/RAISA_WHATSAPP">WhatsApp</a>
+            <a class="button button-primary" href="https://wa.me/RAISA_WHATSAPP">Обсудить ситуацию</a>
             <a class="button button-secondary" href="https://t.me/RAISA_TELEGRAM">Telegram</a>
             <a class="button button-ghost" href="tel:RAISA_PHONE">Позвонить</a>
           </div>
@@ -409,13 +415,7 @@
         <p class="tarot-message" data-tarot-message></p>
         <p class="tarot-cta">Хотите разобрать значение именно для вашей ситуации? Напишите мне, и я посмотрю, что эта карта может означать для вас.</p>
         <div class="cta-row cta-row-popup">
-          <a class="button button-primary" href="https://wa.me/RAISA_WHATSAPP?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%A0%D0%B0%D0%B8%D1%81%D0%B0.%20%D0%AF%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BB%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D1%83%20%D0%B4%D0%BD%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B5%20%D0%B8%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D1%8C%2C%20%D1%87%D1%82%D0%BE%20%D0%BE%D0%BD%D0%B0%20%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%BE%D0%B5%D0%B9%20%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8.">WhatsApp</a>
-          <a class="button button-secondary" href="https://t.me/RAISA_TELEGRAM">Telegram</a>
-        </div>
-        <div class="copy-helper">
-          <p>Текст для Telegram, если захотите просто скопировать сообщение:</p>
-          <textarea readonly>Здравствуйте. Я выбрала карту дня на сайте и хочу понять, что она может значить для моей ситуации.</textarea>
-          <button class="copy-button" type="button" data-copy-message>Скопировать текст</button>
+          <a class="button button-primary" href="https://wa.me/RAISA_WHATSAPP?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%A0%D0%B0%D0%B8%D1%81%D0%B0.%20%D0%AF%20%D0%B2%D1%8B%D0%B1%D1%80%D0%B0%D0%BB%D0%B0%20%D0%BA%D0%B0%D1%80%D1%82%D1%83%20%D0%B4%D0%BD%D1%8F%20%D0%BD%D0%B0%20%D1%81%D0%B0%D0%B9%D1%82%D0%B5%20%D0%B8%20%D1%85%D0%BE%D1%87%D1%83%20%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D1%8C%2C%20%D1%87%D1%82%D0%BE%20%D0%BE%D0%BD%D0%B0%20%D0%BC%D0%BE%D0%B6%D0%B5%D1%82%20%D0%B7%D0%BD%D0%B0%D1%87%D0%B8%D1%82%D1%8C%20%D0%B4%D0%BB%D1%8F%20%D0%BC%D0%BE%D0%B5%D0%B9%20%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D0%B8.">Разобрать карту в WhatsApp</a>
         </div>
       </div>
     </section>
