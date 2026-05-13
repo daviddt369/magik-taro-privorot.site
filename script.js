@@ -1,5 +1,5 @@
 const siteConfig = {
-  storageKey: "raisa-tarot-modal-state",
+  storageKey: "raisa-tarot-modal-state-v2",
   gallerySelector: "[data-gallery]",
   ringSelector: "[data-gallery-ring]",
   tarotMessages: [
@@ -7,8 +7,8 @@ const siteConfig = {
     "Эта карта говорит о знаке или разговоре, который поможет понять дальнейшее направление. Лучше сохранять спокойствие и внимательность к деталям.",
     "Сейчас особенно важно беречь личные границы и не принимать решение на фоне напряжения. Полная картина откроется через честный разбор."
   ],
-  revealDelayMs: 32000,
-  revealScrollRatio: 0.42
+  revealDelayMs: 12000,
+  revealScrollRatio: 0.22
 };
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -181,7 +181,27 @@ function setupRevealEffects() {
   targets.forEach((target) => observer.observe(target));
 }
 
+function setupStickyContactBar() {
+  const stickyBar = document.querySelector(".sticky-contact-bar");
+  const contactSection = document.querySelector("#contact");
+  if (!stickyBar || !contactSection) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        stickyBar.classList.toggle("is-hidden", entry.isIntersecting);
+      });
+    },
+    {
+      threshold: 0.15
+    }
+  );
+
+  observer.observe(contactSection);
+}
+
 setupOrbitGallery();
 setupLightbox();
 setupTarotModal();
 setupRevealEffects();
+setupStickyContactBar();
