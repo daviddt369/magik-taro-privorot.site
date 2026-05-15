@@ -691,6 +691,12 @@ p {
   z-index: 40;
 }
 
+.tarot-modal {
+  display: grid;
+  place-items: center;
+  padding: 12px;
+}
+
 .lightbox {
   display: grid;
   place-items: center;
@@ -730,13 +736,18 @@ p {
 .tarot-dialog {
   position: relative;
   z-index: 1;
+  display: grid;
+  justify-items: center;
   width: min(720px, calc(100% - 24px));
-  margin: 26px auto;
-  padding: 24px 18px;
+  max-height: calc(100svh - 24px);
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 22px 18px 18px;
   border-radius: 28px;
   background:
     radial-gradient(circle at top, rgba(125, 96, 255, 0.12), transparent 30%),
     rgba(11, 14, 24, 0.96);
+  text-align: center;
 }
 
 .tarot-intro {
@@ -746,8 +757,9 @@ p {
 .tarot-card-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  margin: 22px 0 16px;
+  gap: 8px;
+  width: min(100%, 430px);
+  margin: 16px 0 12px;
 }
 
 .tarot-pick {
@@ -813,8 +825,9 @@ p {
 
 .tarot-result {
   display: grid;
-  gap: 16px;
-  padding-top: 8px;
+  justify-items: center;
+  gap: 10px;
+  padding-top: 4px;
 }
 
 .tarot-message {
@@ -822,7 +835,7 @@ p {
 }
 
 .cta-row-popup {
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .copy-helper {
@@ -942,10 +955,13 @@ p {
 
   .header-cta {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-height: 48px;
     padding: 0 20px;
     border-radius: 999px;
     background: linear-gradient(135deg, #c79e68, #7d60ff);
+    text-align: center;
   }
 
   .hero {
@@ -1050,10 +1066,10 @@ body::after {
   inset: 0;
   pointer-events: none;
   z-index: -1;
-  opacity: 0.22;
+  opacity: 0.34;
   background-image:
-    radial-gradient(circle, rgba(246, 225, 180, 0.95) 0 1px, transparent 1.6px),
-    radial-gradient(circle, rgba(123, 236, 211, 0.8) 0 1px, transparent 1.5px);
+    radial-gradient(circle, rgba(246, 225, 180, 1) 0 1.2px, transparent 2.1px),
+    radial-gradient(circle, rgba(123, 236, 211, 0.95) 0 1.1px, transparent 1.9px);
   background-size: 142px 142px, 211px 211px;
   animation: star-drift 18s linear infinite;
 }
@@ -1250,7 +1266,9 @@ h2 {
   width: 70px;
   height: 70px;
   object-fit: contain;
-  filter: drop-shadow(0 12px 26px rgba(199, 158, 104, 0.25));
+  filter:
+    drop-shadow(0 12px 26px rgba(199, 158, 104, 0.34))
+    drop-shadow(0 0 18px rgba(108, 224, 195, 0.16));
 }
 
 .button-primary {
@@ -1488,13 +1506,32 @@ h2 {
   }
 
   .tarot-dialog {
-    margin: 12px auto;
-    max-height: calc(100svh - 24px);
-    overflow: auto;
+    width: min(100%, calc(100% - 18px));
+    max-height: calc(100svh - 18px);
+    padding: 46px 12px 14px;
+    border-radius: 24px;
+  }
+
+  .tarot-dialog h2 {
+    font-size: 1.55rem;
+  }
+
+  .tarot-intro {
+    margin-top: 6px;
+    font-size: 0.94rem;
+    line-height: 1.5;
   }
 
   .tarot-card-grid {
-    gap: 8px;
+    width: min(100%, 320px);
+    gap: 6px;
+    margin: 14px 0 10px;
+  }
+
+  .tarot-result .button {
+    width: min(100%, 280px);
+    min-height: 46px;
+    font-size: 0.94rem;
   }
 }
 
