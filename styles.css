@@ -268,7 +268,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   width: 100%;
-  max-width: 420px;
+  max-width: none;
   margin-inline: auto;
   justify-items: center;
   align-items: center;
@@ -279,7 +279,7 @@ p {
   min-height: 54px;
   border-radius: 18px;
   padding: 0 14px;
-  width: calc(100% - 16px);
+  width: min(240px, calc(100% - 36px));
   justify-self: center;
 }
 
@@ -438,7 +438,12 @@ p {
 .method-step,
 .reason-card {
   display: grid;
+  justify-items: center;
   gap: 10px;
+}
+
+.question-card {
+  text-align: center;
 }
 
 .question-icon,
@@ -548,6 +553,7 @@ p {
 .gallery-note,
 .section-note {
   max-width: 56ch;
+  font-size: 1rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -577,8 +583,10 @@ p {
 
 .video-copy {
   display: grid;
+  justify-items: center;
   gap: 10px;
   padding: 0 18px 18px;
+  text-align: center;
 }
 
 .certificate-grid {
@@ -1109,7 +1117,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.18rem;
+  font-size: 2.05rem;
 }
 
 .hero {
@@ -1418,7 +1426,7 @@ h2 {
   }
 
   h2 {
-    font-size: 1.9rem;
+    font-size: 2.05rem;
   }
 
   .hero-titleline {
@@ -1457,13 +1465,13 @@ h2 {
   .hero-cta-row {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 420px;
+    max-width: none;
     margin-inline: auto;
     gap: 0;
   }
 
   .hero-cta-row .button {
-    width: calc(100% - 12px);
+    width: min(240px, calc(100% - 24px));
     min-height: 50px;
   }
 
@@ -1496,7 +1504,7 @@ h2 {
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2.05rem;
   }
 }
 
