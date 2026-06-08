@@ -1001,10 +1001,6 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .video-card:first-child {
-    grid-column: 1 / -1;
-  }
-
   .orbit-shell {
     min-height: 520px;
   }
