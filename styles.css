@@ -1001,6 +1001,32 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .video-card:first-child {
+    display: contents;
+  }
+
+  .video-card:first-child .video-frame {
+    grid-column: 1;
+    grid-row: 1;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+    border-radius: 30px;
+    overflow: hidden;
+    backdrop-filter: blur(18px);
+  }
+
+  .video-card:last-child {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .video-card:first-child .video-copy {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding: 18px;
+  }
+
   .orbit-shell {
     min-height: 520px;
   }
