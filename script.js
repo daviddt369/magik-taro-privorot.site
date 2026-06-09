@@ -200,8 +200,22 @@ function setupStickyContactBar() {
   observer.observe(contactSection);
 }
 
+function setupConversionTracking() {
+  if (typeof gtag !== 'function') return;
+  document.querySelectorAll('a[href*="wa.me"], a[href*="t.me"], a[href^="tel:"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      gtag('event', 'conversion', {
+        send_to: 'AW-666704998/qGP-CNiSx7scEOa49L0C',
+        value: 1.0,
+        currency: 'USD'
+      });
+    });
+  });
+}
+
 setupOrbitGallery();
 setupLightbox();
 setupTarotModal();
 setupRevealEffects();
 setupStickyContactBar();
+setupConversionTracking();
