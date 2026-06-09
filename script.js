@@ -216,9 +216,9 @@ function gtag_report_conversion(url) {
 }
 
 function setupConversionTracking() {
-  if (typeof gtag !== 'function') return;
   document.querySelectorAll('a[href*="wa.me"], a[href*="t.me"], a[href^="tel:"]').forEach((link) => {
     link.addEventListener('click', (e) => {
+      if (typeof gtag !== 'function') return;
       e.preventDefault();
       gtag_report_conversion(link.href);
     });
