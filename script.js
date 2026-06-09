@@ -200,15 +200,27 @@ function setupStickyContactBar() {
   observer.observe(contactSection);
 }
 
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof url !== 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+    send_to: 'AW-666704998/qGP-CNiSx7scEOa49L0C',
+    value: 1.0,
+    currency: 'USD',
+    event_callback: callback
+  });
+  return false;
+}
+
 function setupConversionTracking() {
   if (typeof gtag !== 'function') return;
   document.querySelectorAll('a[href*="wa.me"], a[href*="t.me"], a[href^="tel:"]').forEach((link) => {
-    link.addEventListener('click', () => {
-      gtag('event', 'conversion', {
-        send_to: 'AW-666704998/qGP-CNiSx7scEOa49L0C',
-        value: 1.0,
-        currency: 'USD'
-      });
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      gtag_report_conversion(link.href);
     });
   });
 }
