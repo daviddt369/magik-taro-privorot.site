@@ -340,9 +340,10 @@ p {
 }
 
 .button-max {
-  background: linear-gradient(135deg, #c79e68, #7d60ff);
+  background: #0a0d1a;
   color: #fff;
-  box-shadow: 0 18px 30px rgba(125, 96, 255, 0.22);
+  border: 1px solid rgba(255,255,255,0.12);
+  gap: 6px;
 }
 
 .button-ghost {
