@@ -346,12 +346,10 @@ p {
 }
 
 .final-name {
-  margin: 6px 0 4px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #d8bc9c;
+  margin: 10px 0 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
 }
 
 .final-phone {
